@@ -30,5 +30,5 @@ let team = {
     }]
 };
 
-team.members.forEach(Element => console.log(Element.Firstname));
+team.members.forEach(Element => console.log(Element.Firstname + ' ' + Element.Lastname));
 
