@@ -1,6 +1,5 @@
 {
-    "teamdata": [
-        {
+    
             "members": [{
                 "Firstname": "Andreas",
                 "Lastname": "Knudsen",
@@ -29,6 +28,4 @@
                 "Height": 180,
                 "EyeColor": "Brown"
             }]
-        }
-    ]
 }
