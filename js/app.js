@@ -5,30 +5,43 @@ let team = {
         "Lastname": "Knudsen",
         "Age": 22,
         "Height": 172,
-        "Eye Color": "Green"
+        "EyeColor": "Green"
     },
     {
         "Firstname": "Jens",
         "Lastname": "Jensen",
         "Age": 87,
         "Height": 140,
-        "Eye Color": "Grey"
+        "EyeColor": "Grey"
     },
     {
         "Firstname": "Kim",
         "Lastname": "Larsen",
         "Age": 45,
         "Height": 191,
-        "Eye Color": "Blue"
+        "EyeColor": "Blue"
     },
     {
         "Firstname": "Troels",
         "Lastname": "Hansen",
         "Age": 33,
         "Height": 180,
-        "Eye Color": "Brown"
+        "EyeColor": "Brown"
     }]
-};
+}
 
-team.members.forEach(Element => console.log(Element.Firstname + ' ' + Element.Lastname));
+let list = document.querySelector("#person-data");
+
+
+team.members.forEach(Element => {
+    let firstname = document.createElement('li');
+    list.appendChild(firstname).innerHTML =
+    Element.Firstname + " " + Element.Lastname
+    + "<br>Alder: " + Element.Age + "<br>Højde: " + Element.Height
+    + "<br>Øjenfarve: " + Element.EyeColor;
+
+    
+    console.log(Element.Firstname + '\n' + Element.Lastname);
+});
+    
 
